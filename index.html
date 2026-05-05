@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Martin Mucha – Investiční nemovitosti Ostrava</title>
   <meta name="description" content="Certifikovaný realitní makléř a investor. Od roku 2016 buduju vlastní portfolio v Moravskoslezském kraji. Pomohu i vám." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzJDMjQyMCIvPgogIDx0ZXh0IHg9IjMyIiB5PSI0NiIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjQwIiBmb250LXdlaWdodD0iNDAwIiAKICAgICAgICBmaWxsPSIjQzQ5NzVBIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTEiPk08L3RleHQ+Cjwvc3ZnPg==" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzJDMjQyMCIvPgogIDx0ZXh0IHg9IjMyIiB5PSI0NiIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjQwIiBmb250LXdlaWdodD0iNDAwIiAKICAgICAgICBmaWxsPSIjQzQ5NzVBIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTEiPk08L3RleHQ+Cjwvc3ZnPg==" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
@@ -837,11 +839,11 @@
     /* ── BEFORE / AFTER ── */
     .before-after {
       display: grid;
-      grid-template-columns: 1fr auto 1fr;
+      grid-template-columns: 1fr 48px 1fr;
       gap: 24px;
-      align-items: center;
-      margin-top: 48px;
-      padding-top: 48px;
+      align-items: start;
+      margin-top: 56px;
+      padding-top: 56px;
       border-top: 1px solid var(--stone);
     }
 
@@ -850,25 +852,25 @@
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 14px;
+      margin-bottom: 16px;
       font-weight: 500;
     }
 
     .ba-photos {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
+      grid-template-columns: 1fr;
+      gap: 10px;
     }
 
     .ba-img {
       width: 100%;
-      aspect-ratio: 4/3;
+      aspect-ratio: 16/10;
       object-fit: cover;
       border-radius: 2px;
       display: block;
     }
 
-    .ba-col:first-child .ba-img { filter: saturate(0.7) brightness(0.95); }
+    .ba-col:first-child .ba-img { filter: saturate(0.65) brightness(0.9); }
 
     .ba-arrow {
       font-size: 32px;
@@ -876,11 +878,12 @@
       font-family: 'Cormorant Garamond', serif;
       text-align: center;
       flex-shrink: 0;
+      padding-top: 40px;
     }
 
     @media (max-width: 1024px) {
       .before-after { grid-template-columns: 1fr; }
-      .ba-arrow { transform: rotate(90deg); text-align: center; }
+      .ba-arrow { transform: rotate(90deg); text-align: center; padding-top: 0; }
       .case-metrics { grid-template-columns: repeat(3, 1fr); }
     }
 
@@ -976,7 +979,7 @@
       <div class="about-content">
         <p class="section-label">O mně</p>
         <div class="gold-line"></div>
-        <h2 class="section-title">Nejsem<br/>zprostředkovatel.<br/><em>Jsem investor.</em></h2>
+        <h2 class="section-title">Nejsem jen<br/>zprostředkovatel.<br/><em>Jsem hlavně investor.</em></h2>
         <p class="section-body" style="margin-bottom:24px;">
           Z Ostravy pocházím a celý život zde žiju. Znám skoro každou ulici – a to není nadsázka. 
           Od roku 2016 nakupuji a vlastním byty v Ostravě a okolí. Vybudoval jsem vlastní realitní portfolio, 
@@ -1225,7 +1228,7 @@
       <div>
         <p class="section-label">Kontakt</p>
         <div class="gold-line"></div>
-        <h2 class="section-title">Začněme<br/><em>nezávazně</em><br/>mluvit</h2>
+        <h2 class="section-title">Vaše čísla,<br/>moje <em>znalost</em><br/>trhu.</h2>
         <p class="contact-body">
           Chcete investovat do nemovitostí v Ostravě nebo Moravskoslezském kraji a nevíte, kde začít? 
           Ozvěte se – první konzultace je zdarma.
